@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/profile_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onMenuClick"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:padding="@dimen/dimen_15">
+
+                <com.heymate.reckon.custom.CircleImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="left"
+                    android:contentDescription="@string/nav_header_desc"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:src="@drawable/boy" />
+
+                <com.heymate.reckon.custom.HMTextView
+                    android:id="@+id/tv_nav_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:text="Gouthami"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_22"
+                    app:fontName="Bold" />
+
+                <com.heymate.reckon.custom.HMTextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="+91 9985645080"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_16"
+                    app:fontName="Roman" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:alpha="0.5"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.heymate.reckon.custom.HMTextView
+                    android:id="@+id/tv_join_apt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/building"
+                    android:drawablePadding="@dimen/dimen_15"
+                    android:gravity="center_vertical"
+                    android:onClick="onMenuClick"
+                    android:padding="@dimen/dimen_15"
+                    android:text="@string/join_apartment"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_16"
+                    app:fontName="Roman" />
+
+                <com.heymate.reckon.custom.HMTextView
+                    android:id="@+id/tv_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/feedback"
+                    android:drawablePadding="@dimen/dimen_15"
+                    android:gravity="center_vertical"
+                    android:onClick="onMenuClick"
+                    android:padding="@dimen/dimen_15"
+                    android:text="@string/feedback"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_16"
+                    app:fontName="Roman" />
+
+                <com.heymate.reckon.custom.HMTextView
+                    android:id="@+id/tv_signout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/sign_out"
+                    android:drawablePadding="@dimen/dimen_15"
+                    android:gravity="center_vertical"
+                    android:onClick="onMenuClick"
+                    android:padding="@dimen/dimen_15"
+                    android:text="@string/sign_out"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_16"
+                    app:fontName="Roman" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

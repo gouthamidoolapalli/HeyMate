@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Hey Mate</string>
+    <string name="splash_text">Let\'s unite together to make our habitat a cynosure!</string>
+    <string name="login">Login</string>
+
+
+    <!-- Dashboard page-->
+    <string name="nav_header_desc">Navigation menu in dashboard</string>
+    <string name="join_apartment">Join Apartment</string>
+    <string name="feedback">Feedback</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="notice_board">Notice Board</string>
+    <string name="local_services">Local Services</string>
+    <string name="flat_members">Flat Members</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="committee_members">Comittee Members</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Navigation Open</string>
+    <string name="navigation_drawer_close">Navigation close</string>
+
+    <!--Login -->
+    <string name="launch_login">Launch Login</string>
+    <string name="hey">Hey</string>
+    <string name="mate">Mate</string>
+    <string name="username_hint">Email/ Phone number</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- Sign Up-->
+    <string name="_try">Try</string>
+    <string name="everyfield">Everyfield</string>
+    <string name="firstname_hint">FirstName</string>
+    <string name="lastname_hint">LastName</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">PhoneNumber</string>
+    <string name="cnfrmpassword_hint">ConfirmPassword</string>
+    <string name="reset">Reset</string>
+    <string name="password">Password</string>
+    <string name="give">Give</string>
+    <string name="best">Best</string>
+    <string name="hint_full_name">Name</string>
+    <string name="add">Add</string>
+    <string name="apartment">Apartment</string>
+
+    <!--Forgot Password-->
+
+</resources>

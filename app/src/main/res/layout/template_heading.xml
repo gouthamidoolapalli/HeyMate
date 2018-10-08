@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/template_layout"
+    android:layout_gravity="center_vertical">
+
+    <com.heymate.reckon.custom.HMTextView
+        android:id="@+id/tv_1"
+        app:fontName="Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/_try"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/textsize_18" />
+
+    <com.heymate.reckon.custom.HMTextView
+        android:id="@+id/tv_2"
+        app:fontName="Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_5"
+        android:text="@string/everyfield"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textsize_18" />
+</LinearLayout>

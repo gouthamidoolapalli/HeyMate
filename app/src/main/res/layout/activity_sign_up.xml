@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.SignUpActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <include layout="@layout/template_heading" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:padding="@dimen/dimen_5">
+
+                <com.heymate.reckon.custom.HMEditText
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/firstname_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textNoSuggestions|textCapSentences"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:padding="@dimen/dimen_5">
+
+                <com.heymate.reckon.custom.HMEditText
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lastname_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textNoSuggestions|textCapSentences"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:padding="@dimen/dimen_5">
+
+                <com.heymate.reckon.custom.HMEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:padding="@dimen/dimen_5">
+
+                <com.heymate.reckon.custom.HMEditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:padding="@dimen/dimen_5">
+
+                <com.heymate.reckon.custom.HMEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textNoSuggestions|textCapSentences"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:padding="@dimen/dimen_5">
+
+                <com.heymate.reckon.custom.HMEditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cnfrmpassword_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textNoSuggestions|textCapSentences"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimen_15"
+                android:onClick="onClickSubmit"
+                android:src="@drawable/login_arrow" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

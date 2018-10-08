@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.ProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_color"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            android:background="#80000000"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#80000000">
+
+            <com.heymate.reckon.custom.CircleImageView
+                android:id="@+id/profile_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/tv_user_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+                android:contentDescription="@string/nav_header_desc"
+                android:src="@drawable/boy" />
+
+            <com.heymate.reckon.custom.HMTextView
+                android:id="@+id/tv_user_name"
+                style="@style/Wrap"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_user_type"
+                android:layout_centerHorizontal="true"
+                android:text="Naresh Poola"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18"
+                app:fontName="Bold" />
+
+            <com.heymate.reckon.custom.HMTextView
+                android:id="@+id/tv_user_type"
+                style="@style/Wrap"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_layout"
+                android:layout_centerHorizontal="true"
+                android:text="Owner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16"
+                app:fontName="Roman" />
+
+            <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.heymate.reckon.custom.HMTextView
+                    android:id="@+id/tv_family_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_7"
+                    android:drawableTop="@drawable/family"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_15"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_18"
+                    app:fontName="Bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_gravity="center_vertical"
+                    android:alpha="0.8"
+                    android:background="@color/white" />
+
+                <com.heymate.reckon.custom.HMTextView
+                    android:id="@+id/tv_block_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_7"
+                    android:drawableTop="@drawable/building"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_15"
+                    android:text="Block - B"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_18"
+                    app:fontName="Bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_gravity="center_vertical"
+                    android:alpha="0.8"
+                    android:background="@color/white" />
+
+                <com.heymate.reckon.custom.HMTextView
+                    android:id="@+id/tv_flat_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_7"
+                    android:drawableTop="@drawable/flat"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_15"
+                    android:text="405"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_18"
+                    app:fontName="Bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.heymate.reckon.custom.HMTextView
+                android:id="@+id/tv_email"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="@dimen/dimen_7"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:text="gouthami.doolapally@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+
+
+            <View style="@style/Divider" />
+
+            <com.heymate.reckon.custom.HMTextView
+                android:id="@+id/tv_phone"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone_call"
+                android:drawablePadding="@dimen/dimen_7"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:text="+91 9985-645-080"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+
+
+            <View style="@style/Divider" />
+
+            <com.heymate.reckon.custom.HMTextView
+                android:id="@+id/tv_nest_name"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/building_3"
+                android:drawablePadding="@dimen/dimen_7"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:text="Maple Homes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+
+
+            <View style="@style/Divider" />
+
+            <com.heymate.reckon.custom.HMTextView
+                android:id="@+id/tv_address"
+                style="@style/Match.Wrap"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:drawableLeft="@drawable/sign_post"
+                android:drawablePadding="@dimen/dimen_7"
+                android:gravity="center_vertical"
+                android:maxLines="3"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="hno-1-13/6/3, surya nagar colony, kapra muncipal office, kapra, hyderabad-062."
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_12" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
