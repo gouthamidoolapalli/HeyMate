@@ -46,7 +46,7 @@
                     android:src="@drawable/boy" />
 
                 <com.heymate.reckon.custom.HMTextView
-                    android:id="@+id/tv_nav_profile"
+                    android:id="@+id/nav_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -57,7 +57,7 @@
                     app:fontName="Bold" />
 
                 <com.heymate.reckon.custom.HMTextView
-                    android:id="@+id/tv_phone"
+                    android:id="@+id/phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -82,7 +82,7 @@
 
 
                 <com.heymate.reckon.custom.HMTextView
-                    android:id="@+id/tv_join_apt"
+                    android:id="@+id/join_apt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/building"
@@ -96,7 +96,7 @@
                     app:fontName="Roman" />
 
                 <com.heymate.reckon.custom.HMTextView
-                    android:id="@+id/tv_feedback"
+                    android:id="@+id/feedback"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/feedback"
@@ -110,7 +110,7 @@
                     app:fontName="Roman" />
 
                 <com.heymate.reckon.custom.HMTextView
-                    android:id="@+id/tv_signout"
+                    android:id="@+id/signout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/sign_out"

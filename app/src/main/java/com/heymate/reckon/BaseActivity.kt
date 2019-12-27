@@ -9,6 +9,11 @@ import android.view.MenuItem
 import butterknife.ButterKnife
 import com.heymate.reckon.utils.CommonUtils
 import kotlinx.android.synthetic.main.template_heading.*
+import android.R.attr.gravity
+import android.view.ViewGroup.LayoutParams.FILL_PARENT
+import android.widget.FrameLayout
+import android.widget.LinearLayout
+
 
 abstract class BaseActivity : AppCompatActivity() {
 
@@ -70,12 +75,11 @@ abstract class BaseActivity : AppCompatActivity() {
 
 
     fun setUpHeading(s1: String, s2: String, isCenter: Boolean) {
-        if(isCenter){
-            template_layout.gravity = Gravity.CENTER
-        }else{
-            template_layout.gravity = Gravity.CENTER_VERTICAL
+        var str = ""
+        if (!isCenter) {
+            str = "...";
         }
         tv_1.setText(s1);
-        tv_2.setText(s2 + "...")
+        tv_2.setText(s2 .plus(str))
     }
 }

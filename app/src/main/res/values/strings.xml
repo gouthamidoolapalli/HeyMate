@@ -32,19 +32,44 @@
     <!-- Sign Up-->
     <string name="_try">Try</string>
     <string name="everyfield">Everyfield</string>
-    <string name="firstname_hint">FirstName</string>
-    <string name="lastname_hint">LastName</string>
+    <string name="firstname_hint">First Name</string>
+    <string name="lastname_hint">Last Name</string>
     <string name="email_hint">Email</string>
-    <string name="phone_hint">PhoneNumber</string>
-    <string name="cnfrmpassword_hint">ConfirmPassword</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="cnfrmpassword_hint">Confirm Password</string>
+
+    <!--Forgot Password-->
     <string name="reset">Reset</string>
     <string name="password">Password</string>
     <string name="give">Give</string>
     <string name="best">Best</string>
     <string name="hint_full_name">Name</string>
+
+
+    <!-- Add Apartment -->
     <string name="add">Add</string>
     <string name="apartment">Apartment</string>
+    <string name="name">Name</string>
+    <string name="apartmentname_hint">Apartment Name</string>
+    <string name="street_hint">Street</string>
+    <string name="area_hint">Area/ Locality</string>
+    <string name="city_hint">City</string>
+    <string name="state_hint">State</string>
+    <string name="pin_hint">Pin Code</string>
+    <string name="secretary_hint">Secretary Name</string>
+    <string name="secretaryPhone_hint">Secretary Phone Number</string>
+    <string name="save">Save</string>
 
-    <!--Forgot Password-->
-
+    <!--Add service-->
+    <string name="service">Service</string>
+    <string name="gender">Gender :</string>
+    <string name="address_hint">Address</string>
+    <string-array name="services_list">
+        <item>Electrician</item>
+        <item>Plumber</item>
+        <item>House Keeping</item>
+        <item>Cook</item>
+        <item>Maid</item>
+        <item>Carpenter</item>
+    </string-array>
 </resources>

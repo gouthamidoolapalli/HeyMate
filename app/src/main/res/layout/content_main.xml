@@ -58,7 +58,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3"
                 android:orientation="vertical"
-                android:padding="@dimen/dimen_15">
+                android:padding="@dimen/dimen_15"
+                android:onClick="onClickShowServices">
 
                 <ImageView
                     android:layout_width="wrap_content"

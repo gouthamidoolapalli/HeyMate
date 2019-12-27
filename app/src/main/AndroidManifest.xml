@@ -30,7 +30,8 @@
         <activity
             android:name=".ui.SignUpActivity"
             android:label="@string/sign_up"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".ui.DashboardActivity"
             android:label="@string/dashboard"
@@ -42,9 +43,15 @@
         <activity
             android:name=".ui.ConfirmPasswordActivity"
             android:label="@string/cnfrmpassword_hint"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity android:name=".ui.ProfileActivity" />
-        <activity android:name=".ui.AddApartmentActivity"></activity>
+        <activity
+            android:name=".ui.AddApartmentActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity android:name=".ui.AddServiceActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
     </application>
 
 </manifest>

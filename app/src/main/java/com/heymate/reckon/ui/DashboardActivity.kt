@@ -27,6 +27,10 @@ class DashboardActivity : BaseActivity() {
         toggle.syncState()
     }
 
+    fun onClickShowServices(view: View) {
+        CommonUtils.startActivity(this, AddServiceActivity::class.java)
+    }
+
     fun onMenuClick(view: View) {
         drawer.closeDrawer(GravityCompat.START)
         when (view.id) {
@@ -36,8 +40,11 @@ class DashboardActivity : BaseActivity() {
                         ProfileActivity::class.java
                 )
             }
-            R.id.tv_join_apt -> {
+            R.id.join_apt -> {
                 CommonUtils.startActivity(this, AddApartmentActivity::class.java)
+            }
+            R.id.feedback -> {
+
             }
         }
     }

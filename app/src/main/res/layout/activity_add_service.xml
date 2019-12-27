@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.AddApartmentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/template_heading" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/serviceSpinner"
+                android:padding="@dimen/dimen_15"
+                android:spinnerMode="dropdown"></Spinner>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:padding="@dimen/dimen_5">
+
+                <com.heymate.reckon.custom.HMEditText
+                    android:id="@+id/fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_full_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textNoSuggestions|textCapSentences"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:padding="@dimen/dimen_5">
+
+                <com.heymate.reckon.custom.HMEditText
+                    android:id="@+id/phoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textNoSuggestions|textCapSentences"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.heymate.reckon.custom.HMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_15"
+                    android:text="@string/gender"
+                    android:textColor="@color/colorPrimary"
+                    app:fontName="Roman" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_15">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gender_man_selector"
+                        android:button="@android:color/transparent"
+                        android:checked="true"
+                        android:layout_marginRight="@dimen/dimen_15" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gender_woman_selector"
+                        android:button="@android:color/transparent" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Match.Wrap"
+                android:padding="@dimen/dimen_15"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/dimen_15"
+                android:background="@drawable/curved_grey_background">
+
+                <com.heymate.reckon.custom.HMEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textNoSuggestions|textCapSentences"
+                    android:maxLines="5"
+                    android:background="@null"
+                    android:paddingRight="@dimen/dimen_3"
+                    android:paddingLeft="@dimen/dimen_3"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textsize_14"
+                    app:fontName="Roman" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.heymate.reckon.custom.HMButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/dimen_40"
+                android:background="@drawable/curved_filled_background"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_14"
+                app:fontName="Bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
