@@ -14,5 +14,4 @@ class ProfileActivity : BaseActivity() {
         setHeyMateActionBar(toolbar)
     }
 
-
 }
