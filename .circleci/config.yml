@@ -15,6 +15,9 @@ jobs:
 #         command: sudo chmod +x ./gradlew
       - run:
           name: Download Dependencies
+          command: yes | sdkmanager --licenses && yes | sdkmanager --update
+      - run:
+          name: Download Dependencies
           command: ./gradlew androidDependencies
       - save_cache:
           paths:
