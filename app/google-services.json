@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "342791951911",
+    "firebase_url": "https://heymate-7a35a.firebaseio.com",
+    "project_id": "heymate-7a35a",
+    "storage_bucket": "heymate-7a35a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342791951911:android:fe9b6c70e1d1ba14672002",
+        "android_client_info": {
+          "package_name": "com.heymate.reckon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342791951911-jc4a64n9k56vkoh90qltq3u4ju9t2lrf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heymate.reckon",
+            "certificate_hash": "65728f8b8826d3151b2537609ed7bd59efe2fb1a"
+          }
+        },
+        {
+          "client_id": "342791951911-ds4r3vmnskgorgf0j9opnve1r0o56sdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw5J6z0TQAC25yW09MAnl3SXCWkFzl9Mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342791951911-ds4r3vmnskgorgf0j9opnve1r0o56sdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
