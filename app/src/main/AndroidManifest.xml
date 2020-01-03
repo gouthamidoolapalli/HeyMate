@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.heymate.reckon">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -50,12 +51,13 @@
             android:name=".ui.AddApartmentActivity"
             android:windowSoftInputMode="stateHidden|adjustPan" />
 
-        <activity android:name=".ui.AddServiceActivity"
+        <activity
+            android:name=".ui.AddServiceActivity"
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
 
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="AIzaSyDw5J6z0TQAC25yW09MAnl3SXCWkFzl9Mw" />
+<!--        <meta-data-->
+<!--            android:name="io.fabric.ApiKey"-->
+<!--            android:value="AIzaSyDw5J6z0TQAC25yW09MAnl3SXCWkFzl9Mw" />-->
     </application>
 
 </manifest>
