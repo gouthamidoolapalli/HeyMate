@@ -31,7 +31,7 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
           destination: app-debug.apk
       - run:
-          name: Uploading on Beta
+          name: Uploading on Crashlytics App Distribution
           command: ./gradlew crashlyticsUploadDistributionDebug
       # - run:
       #     name: Run Tests
