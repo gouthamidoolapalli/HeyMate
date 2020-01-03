@@ -55,9 +55,9 @@
             android:name=".ui.AddServiceActivity"
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
 
-<!--        <meta-data-->
-<!--            android:name="io.fabric.ApiKey"-->
-<!--            android:value="AIzaSyDw5J6z0TQAC25yW09MAnl3SXCWkFzl9Mw" />-->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fe9b6c70e1d1ba14672002" />
     </application>
 
 </manifest>
