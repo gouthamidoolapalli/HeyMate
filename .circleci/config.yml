@@ -5,7 +5,8 @@ jobs:
     docker:
       - image: circleci/android:api-27-alpha
     environment:
-      JVM_OPTS: -Xmx3200m
+      - JVM_OPTS: -Xmx3200m
+      - API_KEY=${CRASHLYTICS_API_TOKEN}
     steps:
       - checkout
       - restore_cache:
