@@ -8,7 +8,7 @@ apply plugin: 'com.google.gms.google-services'
 
 apply plugin: 'io.fabric'
 
-//apply plugin: 'com.google.firebase.appdistribution'
+apply plugin: 'com.google.firebase.appdistribution'
 
 android {
     compileSdkVersion 27
