@@ -64,6 +64,7 @@
     <string name="service">Service</string>
     <string name="gender">Gender :</string>
     <string name="address_hint">Address</string>
+    <string name="fabric_key" templateMergeStrategy="preserve" translatable="false">AAAAT8_-Fic:APA91bE9jgY-yRRr2TfA1WAlPO0q3obWuqn_GyU_DH14jjNwFMuj00Q6GEaApjocSQ2GZsNXQIl0hiN6b8NFG__CCKaOT3KCyDBEjlh8o-uvvwGNoHXVrZ2j1SHz6w0I7ANVn8</string>
     <string-array name="services_list">
         <item>Electrician</item>
         <item>Plumber</item>

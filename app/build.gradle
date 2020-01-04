@@ -8,9 +8,7 @@ apply plugin: 'com.google.gms.google-services'
 
 apply plugin: 'io.fabric'
 
-apply plugin: 'com.google.firebase.appdistribution'
-
-//apply plugin: 'androidx.navigation.safeargs.kotlin'
+//apply plugin: 'com.google.firebase.appdistribution'
 
 android {
     compileSdkVersion 27
@@ -48,11 +46,5 @@ dependencies {
         transitive = true;
     }
     implementation 'com.google.firebase:firebase-analytics:16.0.4'
-
-//    //for navigation editor
-//    def nav_version = "2.1.0-alpha02"
-//
-//    implementation "androidx.navigation:navigation-fragment:$nav_version" // For Kotlin use navigation-fragment-ktx
-//    implementation "androidx.navigation:navigation-ui:$nav_version" // For Kotlin use navigation-ui-ktx
 
 }

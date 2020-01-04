@@ -4,15 +4,12 @@ import android.app.Dialog
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.view.Gravity
 import android.view.MenuItem
 import butterknife.ButterKnife
+import com.crashlytics.android.Crashlytics
 import com.heymate.reckon.utils.CommonUtils
+import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.template_heading.*
-import android.R.attr.gravity
-import android.view.ViewGroup.LayoutParams.FILL_PARENT
-import android.widget.FrameLayout
-import android.widget.LinearLayout
 
 
 abstract class BaseActivity : AppCompatActivity() {
@@ -24,6 +21,7 @@ abstract class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(setContentLayoutId())
         ButterKnife.bind(this)
+        Fabric.with(this, Crashlytics())
         init()
     }
 
