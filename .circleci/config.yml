@@ -27,6 +27,12 @@ jobs :
           key : jars-{{ checksum "build.gradle" }}-{{ checksum "app/build.gradle" }}
           paths :
             - ~/.gradle
+      - run:
+          name: Install Gem
+          command: sudo apt-get install rubygems
+      - run:
+          name: Invoke Bundler
+          command: sudo gem install bundler:1.16.0
       - restore_cache :
           name : Restore Cache Gems
           keys :
