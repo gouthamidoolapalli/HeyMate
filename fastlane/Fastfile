@@ -31,7 +31,7 @@ platform :android do
   desc "Deploy a new version to Firebase Distribute Application" 
   lane :deploy_firebase do |options|
     firebase_app_distribution(
-      app: "heymate-7a35a",
+      app: "1:342791951911:android:fe9b6c70e1d1ba14672002",
       groups: "tester", 
       apk_path: "/Users/byndr/Documents/Gouthami/AndroidWorkSpace/HeyMate/app/build/outputs/apk/debug/app-debug.apk",
       firebase_cli_path: $FIREBASE_CLI_PATH
