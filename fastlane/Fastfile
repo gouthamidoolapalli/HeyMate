@@ -31,7 +31,7 @@ platform :android do
   end
 
   desc "Deploy a new version to Firebase Distribute Application" 
-  lane: deploy_firebase do |options|
+  lane :deploy_firebase do |options|
     firebase_app_distribution(
       app: "heymate-7a35a", 
       groups: "tester", 
