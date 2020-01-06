@@ -1,9 +1,9 @@
 version : 2
 jobs :
   build :
-    working_directory : ~ / code
+    working_directory : ~/code
     docker :
-      - image : circleci / android: api-27-alpha
+      - image : circleci/android:api-27-alpha
     steps :
       - checkout
       - restore_cache :
@@ -19,7 +19,7 @@ jobs :
           command : sudo npm install -g firebase-tools
       - save_cache :
           name : Save Cache Gradle
-          key : jars - {{checksum "build.gradle"}} - {{checksum "app / build.gradle"}}
+          key : jars-{{checksum "build.gradle"}}-{{checksum "app/build.gradle"}}
           paths :
             - ~ / .gradle
       - restore_cache :
@@ -29,11 +29,11 @@ jobs :
             - v3-gems-
       - run :
           name : Bundle Install
-          command : bundle install --path vendor / bundle
+          command : bundle install --path vendor/bundle
       - save_cache :
           name : Save Cache Gems
           key : v3-gems - {{checksum "Gemfile.lock"}}
-          paths : vendor / bundle
+          paths : vendor/bundle
       - run :
           name : Fastlane Build Application
           command : bundle exec fastlane build
