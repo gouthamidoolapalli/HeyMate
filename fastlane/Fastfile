@@ -32,7 +32,7 @@ platform :android do
   lane :deploy_firebase do |options|
     firebase_app_distribution(
       app: "1:342791951911:android:fe9b6c70e1d1ba14672002",
-      testers: "sgaikwad@byndr.com, sivaram@byndr.com, kchandana@byndr.com",
+      testers: "sgaikwad@byndr.com, ksivaram@byndr.com, kchandana@byndr.com",
       groups: "qa-team",
       apk_path: "app/build/outputs/apk/debug/app-debug.apk",
       firebase_cli_path: $FIREBASE_CLI_PATH
