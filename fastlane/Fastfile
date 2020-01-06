@@ -31,12 +31,12 @@ platform :android do
   end
 
   desc "Deploy a new version to Firebase Distribute Application" 
-  lane: deploy_firebase do | options | 
-    firebase_app_distribution ( 
+  lane: deploy_firebase do |options|
+    firebase_app_distribution(
       app: "heymate-7a35a", 
       groups: "tester", 
-      apk_path: "app / build / outputs / apk / debug / app-debug. apk ", 
-      firebase_cli_path: $ FIREBASE_CLI_PATH 
+      apk_path: "app/build/outputs/apk/debug/app-debug.apk",
+      firebase_cli_path: $FIREBASE_CLI_PATH
     ) 
   end
 end
